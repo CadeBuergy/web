@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website | Astronomer & Researcher</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Stars background animation -->
+    <div class="stars"></div>
+    <div class="stars2"></div>
+    <div class="stars3"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">&#9733; Portfolio</a>
+            <ul class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#talks">Talks</a></li>
+                <li><a href="#outreach">Outreach</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Profile Picture -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-container">
+                <div class="profile-picture">
+                    <img src="images/profile.jpg" alt="Profile Picture" onerror="this.src='https://via.placeholder.com/250x250/1a1a2e/ffffff?text=Your+Photo'">
+                </div>
+            </div>
+            <h1 class="hero-title">Your Name</h1>
+            <p class="hero-subtitle">Astronomer | Researcher | Science Communicator</p>
+            <p class="hero-description">
+                Exploring the cosmos through cutting-edge research and sharing the wonders of the universe with the world.
+            </p>
+            <div class="hero-cta">
+                <a href="#research" class="btn btn-primary">View My Research</a>
+                <a href="#about" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>
+                    Welcome to my corner of the web! I am a passionate astronomer and researcher 
+                    dedicated to unraveling the mysteries of our universe. My work spans multiple 
+                    areas of astrophysics, from stellar evolution to cosmology.
+                </p>
+                <p>
+                    When I'm not peering through telescopes or analyzing data, I'm committed to 
+                    making astronomy accessible to everyone through outreach programs and public talks.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Projects Section -->
+    <section id="research" class="section research">
+        <div class="container">
+            <h2 class="section-title">Research Projects</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">&#127756;</div>
+                    <h3>Exoplanet Detection</h3>
+                    <p>
+                        Developing new methods for detecting and characterizing exoplanets 
+                        using transit photometry and radial velocity measurements.
+                    </p>
+                    <span class="card-tag">Ongoing</span>
+                </div>
+                <div class="card">
+                    <div class="card-icon">&#9733;</div>
+                    <h3>Stellar Evolution</h3>
+                    <p>
+                        Studying the life cycles of stars from formation to their final stages, 
+                        including supernovae and neutron star formation.
+                    </p>
+                    <span class="card-tag">2023-Present</span>
+                </div>
+                <div class="card">
+                    <div class="card-icon">&#127776;</div>
+                    <h3>Galaxy Formation</h3>
+                    <p>
+                        Investigating the mechanisms behind galaxy formation and evolution 
+                        in the early universe using observational data.
+                    </p>
+                    <span class="card-tag">Completed</span>
+                </div>
+                <div class="card">
+                    <div class="card-icon">&#128301;</div>
+                    <h3>Dark Matter Studies</h3>
+                    <p>
+                        Analyzing gravitational lensing data to map dark matter distribution 
+                        and understand its role in cosmic structure.
+                    </p>
+                    <span class="card-tag">Ongoing</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conference Talks Section -->
+    <section id="talks" class="section talks">
+        <div class="container">
+            <h2 class="section-title">Conference Talks</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>International Astronomical Union Symposium</h3>
+                        <p class="timeline-date">&#128197; August 2024 | Vienna, Austria</p>
+                        <p>
+                            "New Frontiers in Exoplanet Atmospheric Characterization" - 
+                            Presented groundbreaking research on spectroscopic analysis techniques.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>American Astronomical Society Meeting</h3>
+                        <p class="timeline-date">&#128197; January 2024 | New Orleans, USA</p>
+                        <p>
+                            "Machine Learning Applications in Galaxy Classification" - 
+                            Showcased novel AI approaches for automated galaxy morphology analysis.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>European Astronomical Society Annual Meeting</h3>
+                        <p class="timeline-date">&#128197; July 2023 | Krakow, Poland</p>
+                        <p>
+                            "Stellar Populations in Dwarf Galaxies" - 
+                            Discussed findings on star formation history in nearby satellite galaxies.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Transient Astronomy Conference</h3>
+                        <p class="timeline-date">&#128197; March 2023 | Tokyo, Japan</p>
+                        <p>
+                            "Real-time Detection of Supernova Events" - 
+                            Presented automated detection pipeline for transient astronomical events.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Outreach Activities Section -->
+    <section id="outreach" class="section outreach">
+        <div class="container">
+            <h2 class="section-title">Outreach Activities</h2>
+            <div class="outreach-grid">
+                <div class="outreach-card">
+                    <div class="outreach-icon">&#128218;</div>
+                    <h3>Public Lectures</h3>
+                    <p>
+                        Regular public astronomy lectures at local museums, libraries, and 
+                        community centers, making complex topics accessible to all ages.
+                    </p>
+                </div>
+                <div class="outreach-card">
+                    <div class="outreach-icon">&#127891;</div>
+                    <h3>School Programs</h3>
+                    <p>
+                        Visiting K-12 schools to inspire the next generation of scientists 
+                        through hands-on activities and telescope observations.
+                    </p>
+                </div>
+                <div class="outreach-card">
+                    <div class="outreach-icon">&#128301;</div>
+                    <h3>Star Parties</h3>
+                    <p>
+                        Organizing community stargazing events where the public can observe 
+                        planets, nebulae, and galaxies through professional telescopes.
+                    </p>
+                </div>
+                <div class="outreach-card">
+                    <div class="outreach-icon">&#128187;</div>
+                    <h3>Science Communication</h3>
+                    <p>
+                        Creating educational content for social media and blogs to share 
+                        astronomical discoveries with a global audience.
+                    </p>
+                </div>
+                <div class="outreach-card">
+                    <div class="outreach-icon">&#127757;</div>
+                    <h3>Planetarium Shows</h3>
+                    <p>
+                        Developing and presenting immersive planetarium shows that take 
+                        audiences on journeys through the cosmos.
+                    </p>
+                </div>
+                <div class="outreach-card">
+                    <div class="outreach-icon">&#127911;</div>
+                    <h3>Podcast Guest</h3>
+                    <p>
+                        Regular appearances on science podcasts discussing current research, 
+                        astronomical events, and career paths in astronomy.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Your Name. All rights reserved.</p>
+                <p class="footer-tagline">Exploring the Universe, One Discovery at a Time</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" title="Email">&#9993;</a>
+                    <a href="#" class="social-link" title="Twitter">&#120143;</a>
+                    <a href="#" class="social-link" title="GitHub">&#128187;</a>
+                    <a href="#" class="social-link" title="LinkedIn">&#128279;</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
