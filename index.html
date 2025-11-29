@@ -19,6 +19,9 @@
     <nav class="navbar">
         <div class="nav-container">
             <a href="#home" class="nav-logo">&#9733; Portfolio</a>
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
             <ul class="nav-menu">
                 <li><a href="#about">About</a></li>
                 <li><a href="#research">Research</a></li>
@@ -33,7 +36,7 @@
         <div class="hero-content">
             <div class="profile-container">
                 <div class="profile-picture">
-                    <img src="images/profile.jpg" alt="Profile Picture" onerror="this.src='https://via.placeholder.com/250x250/1a1a2e/ffffff?text=Your+Photo'">
+                    <img src="images/profile.jpg" alt="Portrait of the researcher - replace with your photo" onerror="this.src='https://via.placeholder.com/250x250/1a1a2e/ffffff?text=Your+Photo'">
                 </div>
             </div>
             <h1 class="hero-title">Your Name</h1>
@@ -228,10 +231,10 @@
                 <p>&copy; 2024 Your Name. All rights reserved.</p>
                 <p class="footer-tagline">Exploring the Universe, One Discovery at a Time</p>
                 <div class="social-links">
-                    <a href="#" class="social-link" title="Email">&#9993;</a>
-                    <a href="#" class="social-link" title="Twitter">&#120143;</a>
-                    <a href="#" class="social-link" title="GitHub">&#128187;</a>
-                    <a href="#" class="social-link" title="LinkedIn">&#128279;</a>
+                    <a href="mailto:your.email@example.com" class="social-link" title="Email" aria-label="Send email">&#9993;</a>
+                    <a href="https://twitter.com/yourusername" class="social-link" title="Twitter" aria-label="Visit Twitter profile">&#120143;</a>
+                    <a href="https://github.com/yourusername" class="social-link" title="GitHub" aria-label="Visit GitHub profile">&#128187;</a>
+                    <a href="https://linkedin.com/in/yourusername" class="social-link" title="LinkedIn" aria-label="Visit LinkedIn profile">&#128279;</a>
                 </div>
             </div>
         </div>
@@ -260,6 +263,26 @@
             } else {
                 navbar.classList.remove('scrolled');
             }
+        });
+
+        // Mobile navigation toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        navToggle.addEventListener('click', function() {
+            const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+            navToggle.setAttribute('aria-expanded', !isExpanded);
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+                navToggle.classList.remove('active');
+                navToggle.setAttribute('aria-expanded', 'false');
+            });
         });
     </script>
 </body>
